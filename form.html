@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html forms</title>
+        <style>body{background-color: aqua;width: 100%};</style>
+    </head>
+    <body>
+        <form name="employement" action="send.php" method="post">
+            <table bordercolor="yellow" width="100%" border="1">
+                <tr>
+                    <td>employment form</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>First name</td>
+                    <td><input type="text" name="fname" maxlength="40"></td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
+                    <td><input type="text" name="lname" maxlength="40"></td>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>
+                        <select name="position" id="">
+                            <option>full stack</option>
+                            <option>fresher</option>
+                            <option>python developer</option>
+                            <option>frontend</option>
+                            
+                
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>experience</td>
+                    <td>
+                        <select name="experience" id="">
+                            <option>beginner</option>
+                            <option>fresher</option>
+                            <option>experienced</option>
+                           
+                            
+                
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>employment type</td>
+                    <td>
+                        <input type="checkbox" name="ft">full time
+                        <input type="checkbox" name="pt">part time
+                        <input type="checkbox" name="ct">contract
+                </tr>
+                <tr>
+                    <td>employement status</td>
+                    <td>
+                        <input type="radio" name="estaus" value="student">student
+                        <input type="radio" name="estatus" value="unemloyed">unemployed                        <input type="radio" name="estatus">employed
+                    </td>
+                </tr>
+                <tr>
+                    <td>additional comments
+                    </td>
+                    <td><textarea name="comments" rows="4" cols="9"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                    
+                </tr>
+            </table>
+            <!-- <div>
+                <input type="checkbox">
+                <input type="number">
+            </div> -->
+        </form>
+
+         
+    </body>
+</html>
